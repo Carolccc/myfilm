@@ -15,7 +15,7 @@
         <div class="icon iconfont icon-shenfenzheng"></div>
         <div id="search">
             <el-input placeholder="找影视剧、影人、影院" v-model="input5" class="input-with-select">
-              <el-button slot="append" icon="el-icon-search">搜索</el-button>
+              <el-button slot="append" type="primary" icon="el-icon-search">搜索</el-button>
             </el-input>
         </div>
       </div>
@@ -30,15 +30,172 @@
     </el-carousel>
 
     <div class="content">
+      <div class="aside">
+        <div class="panel-aside">
+          <div class="panel-header">
+            <span class="panel-title">
+                <h1>排行榜</h1>
+            </span>
+          </div>
+          <div class="panel-content">
+            <ul class="rank-hot">
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="main">
-        <div class="item">
-          <h1>正在热映</h1>
-          <dl>
-            <dd>
-              <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-              <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-            </dd>
-          </dl>
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-more">
+               <a href="#">全部</a>
+            </span>
+            <span class="panel-title">
+                <h1>正在热映</h1>
+            </span>
+          </div>
+          <div class="panel-content">
+            <dl>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+
+            </dl>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-more">
+               <a href="#">全部</a>
+            </span>
+            <span class="panel-title">
+                <h1>即将上映</h1>
+            </span>
+          </div>
+          <div class="panel-content">
+            <dl>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+              <dd>
+                <div class="item">
+                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+                  <div class="movie-title"><a href="#">头号玩家</a></div>
+                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                </div>
+              </dd>
+            </dl>
+          </div>
         </div>
       </div>
     </div>
@@ -53,7 +210,7 @@ export default {
     return {
       activeIndex: "1",
       input5: "",
-      value1: 5
+      value1: 4.5
     };
   },
   methods: {
@@ -114,13 +271,13 @@ export default {
 }
 
 .el-main {
-   width: 100%;
+  width: 100%;
   min-width: 1200px;
 }
 
 /* 走马灯 */
-.el-carousel{
-  padding-top:40px;
+.el-carousel {
+  padding-top: 40px;
   width: 1400px;
   margin: 0 auto;
 }
@@ -132,24 +289,118 @@ export default {
   margin: 0;
 }
 .el-carousel__item:nth-child(2n) {
-  background:url(../image/2.jpg);
-  background-repeat:no-repeat;
-  width:100%;
-  height:100%;
-  background-size:100% 100%;
+  background: url(../image/2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
 }
 .el-carousel__item:nth-child(2n + 1) {
-  background:url(../image/2.jpg);
-  background-repeat:no-repeat;
-  width:100%;
-  height:100%;
-  background-size:100% 100%;
+  background: url(../image/2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
 }
 
-.content{
+.content {
   width: 1300px;
   margin: 0 auto;
   margin-top: 70px;
+}
+.panel {
+  margin: 62px 0 0;
+  width: 800px;
+}
+.panel-aside{
+  margin: 0 auto;
+  width: 400px;
+}
+.panel-header{
+  margin:0 auto;
+}
+.panel-content{
+  margin:0 auto;
+}
+.panel-title{
+  color: red;
+}
+.panel-more{
+  font-size: 18px;
+  line-height: 16px;
+  float: right;
+  margin-top: 10px;
+  text-decoration: none;
+}
+dd{
+  margin: 30px 0 0 30px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.item{
+    position: relative;
+    border: 1px solid #efefef;
+    margin: -1px;
+}
+.el-rate{
+  text-align: center;
+}
+.movie-title{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.aside{
+    float: right;
+    margin-top: -25px;
+}
+li{
+  list-style: none;
+  display: list-item;
+  padding-left: 0;
+}
+a{
+
+  text-decoration: none;
+}
+a:hover
+{
+  background-color:#C0C4CC;
+}
+.rank-hot{
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: -30px;
+}
+.rank-index{
+  font-size: 18px;
+  color: #999;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.rank-movie-name{
+    display: inline-block;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #333;
+    vertical-align: top;
+}
+.rank-moive-num{
+  padding-left: 200px;
+  color: #fdb863;
+  font-size: 14px;
+}
+.rank-item{
+    display: block;
+    height: 40px;
+    line-height: 35px;
+    margin-bottom:10px;
 
 }
 </style>
