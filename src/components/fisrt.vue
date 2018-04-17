@@ -6,7 +6,7 @@
           <img src="../image/1.jpg" style="width: 170px;height: 59px;">
         </div>
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
-            <el-menu-item index="1"><span>首页</span></el-menu-item>
+            <el-menu-item index="1">首页</el-menu-item>
             <el-menu-item index="2">电影</el-menu-item>
             <el-menu-item index="3">影院</el-menu-item>
             <el-menu-item index="4">榜单</el-menu-item>
@@ -23,23 +23,23 @@
 
   <el-main>
     <!-- 走马灯 -->
-    <el-carousel :interval="5000" height="400px" arrow="always">
-    <el-carousel-item v-for="item in 4" :key="item">
+    <el-carousel :interval="5000" height="500px" arrow="always">
+      <el-carousel-item v-for="item in 4" :key="item">
       <h3>{{ item }}</h3>
-    </el-carousel-item>
+      </el-carousel-item>
     </el-carousel>
 
     <div class="content">
-      <div id="hotfilm">
-        <h1>正在热映</h1>
+      <div class="main">
         <div class="item">
-          <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="70%"></a>
-          <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+          <h1>正在热映</h1>
+          <dl>
+            <dd>
+              <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
+              <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+            </dd>
+          </dl>
         </div>
-      </div>
-
-      <div id="rank">
-        <h1>今日票房</h1>
       </div>
     </div>
   </el-main>
@@ -81,7 +81,6 @@ export default {
 #header {
   width: 1200px;
   margin: 0 auto;
-  height: 180px;
 }
 #logo {
   float: left;
@@ -90,7 +89,8 @@ export default {
   display: inline-block;
   overflow: hidden;
   margin-left: 20px;
-  margin-top: 0px;
+  height: 59px;
+  text-align: center;
 }
 #search {
   float: right;
@@ -114,25 +114,43 @@ export default {
 }
 
 .el-main {
-  width: 1200px;
-  margin: 0 auto;
+   width: 100%;
+  min-width: 1200px;
 }
 
 /* 走马灯 */
+.el-carousel{
+  padding-top:40px;
+  width: 1400px;
+  margin: 0 auto;
+}
 .el-carousel__item h3 {
   color: #475669;
   font-size: 18px;
   opacity: 0.75;
   line-height: 300px;
   margin: 0;
-  width: 100%;
-  min-width: 1200px;
 }
 .el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
+  background:url(../image/2.jpg);
+  background-repeat:no-repeat;
+  width:100%;
+  height:100%;
+  background-size:100% 100%;
 }
 .el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
+  background:url(../image/2.jpg);
+  background-repeat:no-repeat;
+  width:100%;
+  height:100%;
+  background-size:100% 100%;
+}
+
+.content{
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 70px;
+
 }
 </style>
 
