@@ -49,7 +49,7 @@ export default {
 #contain {
   width: 1200px;
   margin: 0 auto;
-  height: 20px;
+
 }
 #header {
   position: fixed;
