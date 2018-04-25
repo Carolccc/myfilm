@@ -18,19 +18,41 @@
           </div>
           <div class="panel-content">
             <ul class="rank-hot">
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
-                <li class="rank-item"><a href="#"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></a></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">2</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">3</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">4</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">5</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">6</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">7</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">8</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">9</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">300.6W</span></router-link></li>
             </ul>
           </div>
         </div>
+
+      <div class="panel-asdide-expect">
+        <div class="panel-aside">
+          <div class="panel-header">
+            <span class="panel-title">
+                <span>最受期待</span>
+            </span>
+          </div>
+          <div class="panel-content">
+            <ul class="rank-hot">
+               <li class="rank-item"><router-link to="item"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">2</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">3</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">4</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">5</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">6</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">7</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">8</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+                <li class="rank-item"><router-link to="item"><i class="rank-index">9</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       </div>
 
       <div class="main">
@@ -45,63 +67,62 @@
           </div>
           <div class="panel-content">
             <dl>
-              <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+               <dd>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
+                  </div>
+                </a>
               </dd>
-
             </dl>
           </div>
         </div>
@@ -118,60 +139,71 @@
           <div class="panel-content">
             <dl>
               <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <div class="movie-time">5月11日上映</div>
-                </div>
+                <a href="#">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
               </dd>
               <dd>
+                <a href="#">
                 <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
                 </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd> <dd>
+                <a href="#">
+                <div class="item">
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd> <dd>
+                <a href="#">
+                <div class="item">
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd> <dd>
+                <a href="#">
+                <div class="item">
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd> <dd>
+                <a href="#">
+                <div class="item">
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd> <dd>
+                <a href="#">
+                <div class="item">
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
               </dd>
-              <dd>
+               <dd>
+                <a href="#">
                 <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
+                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
                 </div>
-              </dd>
-              <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
-              </dd>
-              <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
-              </dd>
-              <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
-              </dd>
-              <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
-              </dd>
-              <dd>
-                <div class="item">
-                  <a href="#"><img src="../image/hotfilm1.jpg" alt="头号玩家" width="160px"></a>
-                  <div class="movie-title"><a href="#">头号玩家</a></div>
-                  <el-rate v-model="value1" disabled show-score text-color="#ff9900" score-template="{value}"></el-rate>
-                </div>
+                </a>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
               </dd>
             </dl>
           </div>
@@ -187,13 +219,14 @@
 export default {
   data() {
     return {
-      value1: 4.5
+      value1: 4.5,
+      wantnum:1000
     };
   }
 };
 </script>
 
-<style>
+<style scoped>
 .el-container {
   margin: 0 auto;
   display: block;
@@ -271,16 +304,22 @@ dd {
   position: relative;
   border: 1px solid #efefef;
   margin: -1px;
+  height: 225px;
+  width: 160px;
+  background: url(../image/hotfilm1.jpg);
+  background-repeat:no-repeat;
+  background-size: 160px 225px;
 }
+
 .el-rate {
   text-align: center;
 }
 .movie-title {
-  text-align: center;
-  font-size: 18px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-bottom: 3px;
-  margin-top: 3px;
+  width: 160px;
+  bottom: 12px;
+  position: absolute;
+  background:slategray;
+  background-color: rgba(0,0,0,0.5);
 }
 .aside {
   float: right;
@@ -290,12 +329,6 @@ li {
   list-style: none;
   display: list-item;
   padding-left: 0;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  background-color: #c0c4cc;
 }
 .rank-hot {
   overflow: hidden;
@@ -317,11 +350,13 @@ a:hover {
   font-size: 16px;
   color: #333;
   vertical-align: top;
+  margin-left: 5px;
 }
 .rank-moive-num {
   padding-left: 200px;
   color: #fdb863;
   font-size: 14px;
+  float: right;
 }
 .rank-item {
   display: block;
@@ -341,6 +376,35 @@ a:hover {
   font-size: 14px;
   line-height: 40px;
   text-align: center;
+}
+.item-title{
+  color: white;
+  font-size: 18px;
+  width: 160px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 8px;
+}
+.item-sorce{
+  font-size: 18px;
+  color: #fdb863;
+  margin-right: 10px;
+  float: right;
+}
+.movie-want{
+  padding: 5px 0px 5px 5px;
+  border: 1px solid #efefef;
+  font-size: 14px;
+  color: #ffb400;
+  background-color: #fbfbfb;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #c0c4cc;
+}
+.panel-asdide-expect{
+  margin-top: 105px;
 }
 </style>
 

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index'
-import registered from '@/components/registered'
+import flim from '@/components/flim'
+import item from '@/components/item'
 
 Vue.use(Router)
 
@@ -16,8 +17,12 @@ export default new Router({
       component: index
     },
     {
-      path:'/registered',
-      component: registered
+      path:'/flim',
+      component: flim
+    },
+    {
+      path:'/item',
+      component: item
     }
   ]
 })

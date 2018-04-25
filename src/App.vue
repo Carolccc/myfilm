@@ -7,7 +7,7 @@
           </div>
           <el-menu :default-active="activeIndex" router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
               <el-menu-item index="index">首页</el-menu-item>
-              <el-menu-item index="registered">电影</el-menu-item>
+              <el-menu-item index="flim">电影</el-menu-item>
               <el-menu-item index="3">影院</el-menu-item>
               <el-menu-item index="4">榜单</el-menu-item>
               <el-menu-item index="5">热点</el-menu-item>
@@ -28,6 +28,7 @@
 export default {
   data() {
     return {
+      activeIndex: "index",
       searchinput: ""
     };
   },
@@ -45,7 +46,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #contain {
   width: 1200px;
   margin: 0 auto;
