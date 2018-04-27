@@ -59,7 +59,8 @@ export default {
   width: 100%;
   min-width: 1200px;
   background-color: #fff;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #ebeef5;
+  box-shadow: 0px 0px 5px 0px #e4e7ed
 }
 #logo {
   float: left;
@@ -89,5 +90,21 @@ export default {
   margin-right: 10px;
   position: relative;
   overflow: hidden;
+}
+
+.el-menu--horizontal{
+  border-bottom: none;
+}
+
+.el-menu-item{
+  border-bottom: none;
+}
+
+.el-menu-item.is-active{
+  border-bottom: none
+}
+
+ul li {
+  border-bottom-color: #fff;
 }
 </style>
