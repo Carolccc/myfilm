@@ -31,16 +31,16 @@
           </div>
         </div>
 
-      <div class="panel-asdide-expect">
-        <div class="panel-aside">
-          <div class="panel-header">
-            <span class="panel-title">
-                <span>最受期待</span>
-            </span>
-          </div>
-          <div class="panel-content">
-            <ul class="rank-hot">
-               <li class="rank-item"><router-link to="item"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
+        <div class="panel-asdide-expect">
+          <div class="panel-aside">
+            <div class="panel-header">
+              <span class="panel-title">
+                  <span>最受期待</span>
+              </span>
+            </div>
+            <div class="panel-content">
+              <ul class="rank-hot">
+                <li class="rank-item"><router-link to="item"><i class="rank-index">1</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
                 <li class="rank-item"><router-link to="item"><i class="rank-index">2</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
                 <li class="rank-item"><router-link to="item"><i class="rank-index">3</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
                 <li class="rank-item"><router-link to="item"><i class="rank-index">4</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
@@ -49,10 +49,10 @@
                 <li class="rank-item"><router-link to="item"><i class="rank-index">7</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
                 <li class="rank-item"><router-link to="item"><i class="rank-index">8</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
                 <li class="rank-item"><router-link to="item"><i class="rank-index">9</i><span class="rank-movie-name">头号玩家</span><span class="rank-moive-num">1000W人想看</span></router-link></li>
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div class="main">
@@ -68,60 +68,60 @@
           <div class="panel-content">
             <dl>
                <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span><i class="item-sorce">9.5</i></div>
                   </div>
-                </a>
+                </router-link>
               </dd>
             </dl>
           </div>
@@ -139,69 +139,74 @@
           <div class="panel-content">
             <dl>
               <dd>
-                <a href="#">
+                <router-link to="item">
                   <div class="item">
                     <div class="movie-title"><span class="item-title">头号玩家</span></div>
                   </div>
-                </a>
+                </router-link>
                 <div class="movie-want">{{wantnum}}人想看</div>
                   <div class="movie-time">4月27日上映</div>
               </dd>
               <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
-                <div class="movie-want">{{wantnum}}人想看</div>
-                  <div class="movie-time">4月27日上映</div>
-              </dd> <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
-                <div class="movie-want">{{wantnum}}人想看</div>
-                  <div class="movie-time">4月27日上映</div>
-              </dd> <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
-                <div class="movie-want">{{wantnum}}人想看</div>
-                  <div class="movie-time">4月27日上映</div>
-              </dd> <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
-                <div class="movie-want">{{wantnum}}人想看</div>
-                  <div class="movie-time">4月27日上映</div>
-              </dd> <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
-                <div class="movie-want">{{wantnum}}人想看</div>
-                  <div class="movie-time">4月27日上映</div>
-              </dd> <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
                 <div class="movie-want">{{wantnum}}人想看</div>
                   <div class="movie-time">4月27日上映</div>
               </dd>
-               <dd>
-                <a href="#">
-                <div class="item">
-                  <div class="movie-title"><span class="item-title">头号玩家</span></div>
-                </div>
-                </a>
+              <dd>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd>
+              <dd>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd>
+              <dd>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd>
+              <dd>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd>
+              <dd>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
+                <div class="movie-want">{{wantnum}}人想看</div>
+                  <div class="movie-time">4月27日上映</div>
+              </dd>
+              <dd>
+                <router-link to="item">
+                  <div class="item">
+                    <div class="movie-title"><span class="item-title">头号玩家</span></div>
+                  </div>
+                </router-link>
                 <div class="movie-want">{{wantnum}}人想看</div>
                   <div class="movie-time">4月27日上映</div>
               </dd>
@@ -220,7 +225,7 @@ export default {
   data() {
     return {
       value1: 4.5,
-      wantnum:1000
+      wantnum: 1000
     };
   }
 };
@@ -307,7 +312,7 @@ dd {
   height: 225px;
   width: 160px;
   background: url(../image/hotfilm1.jpg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: 160px 225px;
 }
 
@@ -318,12 +323,11 @@ dd {
   width: 160px;
   bottom: 12px;
   position: absolute;
-  background:slategray;
-  background-color: rgba(0,0,0,0.5);
+  background: slategray;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .aside {
   float: right;
-
 }
 li {
   list-style: none;
@@ -364,33 +368,33 @@ li {
   line-height: 35px;
   margin-bottom: 10px;
 }
-.textcolor-red{
+.textcolor-red {
   color: red;
 }
-.textcolor-blue{
-  color: #2d98f3!important;
+.textcolor-blue {
+  color: #2d98f3 !important;
 }
-.movie-time{
+.movie-time {
   border: none;
   color: #999;
   font-size: 14px;
   line-height: 40px;
   text-align: center;
 }
-.item-title{
+.item-title {
   color: white;
   font-size: 18px;
   width: 160px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-left: 8px;
 }
-.item-sorce{
+.item-sorce {
   font-size: 18px;
   color: #fdb863;
   margin-right: 10px;
   float: right;
 }
-.movie-want{
+.movie-want {
   padding: 5px 0px 5px 5px;
   border: 1px solid #efefef;
   font-size: 14px;
@@ -403,7 +407,7 @@ a {
 a:hover {
   background-color: #c0c4cc;
 }
-.panel-asdide-expect{
+.panel-asdide-expect {
   margin-top: 105px;
 }
 </style>

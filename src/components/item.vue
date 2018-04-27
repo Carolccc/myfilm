@@ -35,8 +35,66 @@
 
     <div class="container">
       <el-tabs v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="介绍" name="first">用户管理</el-tab-pane>
-        <el-tab-pane label="演职人员" name="second">配置管理</el-tab-pane>
+        <el-tab-pane label="介绍" name="first">
+          <div class="model">
+            <div class="mod-title">
+              <h3>剧情简介</h3>
+            </div>
+            <div class="mod-main">
+              {{modcontent}}
+            </div>
+          </div>
+          <div class="model">
+            <div class="mod-title">
+              <h3>演职人员</h3>
+            </div>
+            <div class="mod-main">
+              <div class="movie-actor">
+                <div class="dir-title">演员</div>
+                  <div class="dir-mian">
+                      <span class="act-main">
+                        <div class="dir-pic"><img src="../image/actor4.jpg"></div>
+                        <div class="dir-name">丽娜·维特</div>
+
+                      </span>
+                      <span class="act-main">
+                        <div class="dir-pic"><img src="../image/actor3.jpg"></div>
+                        <div class="dir-name">本·门德尔森</div>
+                      </span>
+                      <span class="act-main">
+                        <div class="dir-pic"><img src="../image/actor2.jpg"></div>
+                        <div class="dir-name">奥利维亚·库克</div>
+                      </span>
+                      <span class="act-main">
+                        <div class="dir-pic"><img src="../image/actor1.jpg"></div>
+                        <div class="dir-name">泰尔·谢里丹</div>
+                      </span>
+                  </div>
+              </div>
+              <div class="movie-director">
+                <div class="dir-title">导演</div>
+                  <div class="dir-mian">
+                    <span class="dir-main">
+                      <div class="dir-pic"><img src="../image/director.jpg"></div>
+                      <div class="dir-name">史蒂文·斯皮尔伯格</div>
+                    </span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="model">
+            <div class="mod-title">
+              <h3>热门短评</h3>
+            </div>
+            <div class="mod-main">
+              {{modcontent}}
+            </div>
+          </div>
+        </el-tab-pane>
+
+        <el-tab-pane label="演职人员" name="second">
+
+        </el-tab-pane>
         <el-tab-pane label="奖项" name="third">角色管理</el-tab-pane>
         <el-tab-pane label="图集" name="fourth">定时任务补偿</el-tab-pane>
       </el-tabs>
@@ -47,16 +105,18 @@
 <script>
 export default {
   data() {
-    return{
-      value1:4.5,
-      activeName: 'first'
+    return {
+      value1: 4.5,
+      activeName: "first",
+      modcontent:
+        "2045年，遭遇能源危机的世界处于崩溃边缘，人类选择在名为“绿洲”的VR游戏中寻找慰藉。但游戏创始人詹姆斯·哈利迪（马克·里朗斯 饰）的遗嘱打破了世外桃源的宁静：只要玩家寻获他设置的彩蛋，就能接手“绿洲”成为新的世界首富。吸引全世界参与的大冒险就此展开，男主角韦德·沃兹（泰尔·谢里丹 饰）也投身其中，但等待他的夺宝之旅不仅神秘凶险，还裹挟着巨大阴谋……"
     };
   },
   methods: {
-      handleClick(tab, event) {
-        console.log(tab, event);
-      }
+    handleClick(tab, event) {
+      console.log(tab, event);
     }
+  }
 };
 </script>
 
@@ -95,31 +155,75 @@ export default {
   margin-left: 50px;
   color: white;
 }
-.item-button{
+.item-button {
   margin-top: 50px;
 }
-.texttype{
+.texttype {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.item-rank{
+.item-rank {
   float: right;
   margin-right: 200px;
   margin-top: -30px;
 }
-.item-num{
+.item-num {
   margin-top: 15px;
 }
-.text-rank{
+.text-rank {
   margin-bottom: 5px;
 }
-.text-num{
+.text-num {
   font-size: 28px;
 }
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
 }
-
+.model {
+  margin-bottom: 50px;
+}
+.mod-title {
+  border-left: 4px solid red;
+}
+h3 {
+  padding-left: 5px;
+}
+.mod-main {
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+.movie-director{
+  width: 128px;
+}
+.dir-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  width: 128px;
+}
+.dir-pic{
+  width: 128px;
+  height: 170px;
+}
+.dir-name {
+  width: 128px;
+  margin-top: 8px;
+  line-height: 1.2;
+  color: #333;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.movie-actor {
+  float: right;
+  margin-right: 350px;
+}
+.act-main{
+  float: right;
+  margin-right: 40px;
+}
 </style>
