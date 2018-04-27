@@ -2,22 +2,22 @@
   <div id="app">
         <div id="header">
           <div id="contain">
-          <div id="logo">
-            <img src="./image/1.jpg">
-          </div>
-          <el-menu :default-active="activeIndex" router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
-              <el-menu-item index="index">首页</el-menu-item>
-              <el-menu-item index="flim">电影</el-menu-item>
-              <el-menu-item index="3">影院</el-menu-item>
-              <el-menu-item index="4">榜单</el-menu-item>
-              <el-menu-item index="5">热点</el-menu-item>
-          </el-menu>
-          <div class="icon iconfont icon-shenfenzheng"></div>
-          <div id="search">
-              <el-input placeholder="找影视剧、影人、影院" v-model="searchinput" class="input-with-select">
-                <el-button slot="append" type="primary" icon="el-icon-search">搜索</el-button>
-              </el-input>
-          </div>
+            <div id="logo">
+              <router-link to="index" :activeIndex="index"><img src="./image/1.jpg"></router-link>
+            </div>
+            <el-menu :default-active="activeIndex" router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
+                <el-menu-item index="index">首页</el-menu-item>
+                <el-menu-item index="flim">电影</el-menu-item>
+                <el-menu-item index="3">影院</el-menu-item>
+                <el-menu-item index="ranking">榜单</el-menu-item>
+                <el-menu-item index="5">热点</el-menu-item>
+            </el-menu>
+            <div class="icon iconfont icon-shenfenzheng"></div>
+            <div id="search">
+                <el-input placeholder="找影视剧、影人、影院" v-model="searchinput" class="input-with-select">
+                  <el-button slot="append" type="primary" icon="el-icon-search">搜索</el-button>
+                </el-input>
+            </div>
         </div>
     </div>
     <router-view/>

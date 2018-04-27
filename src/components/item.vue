@@ -55,7 +55,6 @@
                       <span class="act-main">
                         <div class="dir-pic"><img src="../image/actor4.jpg"></div>
                         <div class="dir-name">丽娜·维特</div>
-
                       </span>
                       <span class="act-main">
                         <div class="dir-pic"><img src="../image/actor3.jpg"></div>
