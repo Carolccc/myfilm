@@ -3,7 +3,7 @@
         <div id="header">
           <div id="contain">
           <div id="logo">
-            <img src="./image/1.jpg" style="width: 170px;height: 59px;">
+            <img src="./image/1.jpg">
           </div>
           <el-menu :default-active="activeIndex" router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
               <el-menu-item index="index">首页</el-menu-item>
@@ -63,6 +63,7 @@ export default {
 }
 #logo {
   float: left;
+  margin-top: 13px;
 }
 .el-menu {
   display: inline-block;
