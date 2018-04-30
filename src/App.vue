@@ -3,14 +3,14 @@
         <div id="header">
           <div id="contain">
             <div id="logo">
-              <router-link to="index" :activeIndex="index"><img src="./image/1.jpg"></router-link>
+              <router-link to="/index"><img src="./image/1.jpg"></router-link>
             </div>
-            <el-menu :default-active="activeIndex" router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
+            <el-menu :default-active="activeIndex" :router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color=red>
                 <el-menu-item index="index">首页</el-menu-item>
                 <el-menu-item index="flim">电影</el-menu-item>
-                <el-menu-item index="3">影院</el-menu-item>
+                <el-menu-item index="3"  disabled>影院</el-menu-item>
                 <el-menu-item index="ranking">榜单</el-menu-item>
-                <el-menu-item index="5">热点</el-menu-item>
+                <el-menu-item index="5"  disabled>热点</el-menu-item>
             </el-menu>
             <div class="icon iconfont icon-shenfenzheng"></div>
             <div id="search">
@@ -21,14 +21,17 @@
         </div>
     </div>
     <router-view/>
+    <div id="footer">
+      <p style="color:white; text-align:center">@zmh,ywj,wzj</p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
+  name: "App",
   data() {
     return {
-      activeIndex: "index",
       searchinput: ""
     };
   },
@@ -41,8 +44,7 @@ export default {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
     }
-  },
-  name: "App"
+  }
 };
 </script>
 
@@ -106,5 +108,12 @@ export default {
 
 ul li {
   border-bottom-color: #fff;
+}
+#footer{
+  background-color: #262426;
+  padding: 56px 0;
+  margin: 0 auto;
+  min-width: 1200px;
+  margin-top: 82px;
 }
 </style>

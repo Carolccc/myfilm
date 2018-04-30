@@ -83,6 +83,9 @@
           </div>
           <div class="model">
             <div class="mod-title">
+              <div class="btn-comment">
+                <el-button type="danger" icon="el-icon-edit"  @click="open">写短评</el-button>
+              </div>
               <h3>热门短评</h3>
             </div>
             <div class="mod-main">
@@ -92,10 +95,39 @@
         </el-tab-pane>
 
         <el-tab-pane label="演职人员" name="second">
-
+          <div >
+            <div class="dir-title">导演</div>
+              <dl>
+                <dd>
+                  <div class="dir-pic"><img src="../image/director.jpg"></div>
+                  <div class="dir-name">史蒂文·斯皮尔伯格</div>
+                </dd>
+              </dl>
+          </div>
+          <div >
+              <div class="dir-title">演员</div>
+              <dl>
+                <dd>
+                  <div class="dir-pic"><img src="../image/actor1.jpg"></div>
+                  <div class="dir-name">泰尔·谢里丹</div>
+                </dd>
+                <dd>
+                  <div class="dir-pic"><img src="../image/actor2.jpg"></div>
+                  <div class="dir-name">奥利维亚·库克</div>
+                </dd>
+                <dd>
+                  <div class="dir-pic"><img src="../image/actor3.jpg"></div>
+                  <div class="dir-name">本·门德尔森</div>
+                </dd>
+                <dd>
+                  <div class="dir-pic"><img src="../image/actor4.jpg"></div>
+                  <div class="dir-name">丽娜·维特</div>
+                </dd>
+              </dl>
+          </div>
         </el-tab-pane>
-        <el-tab-pane label="奖项" name="third">角色管理</el-tab-pane>
-        <el-tab-pane label="图集" name="fourth">定时任务补偿</el-tab-pane>
+        <el-tab-pane label="奖项" name="third" disabled>角色管理</el-tab-pane>
+        <el-tab-pane label="图集" name="fourth" disabled>定时任务补偿</el-tab-pane>
       </el-tabs>
     </div>
   </div>
@@ -114,12 +146,36 @@ export default {
   methods: {
     handleClick(tab, event) {
       console.log(tab, event);
+    },
+    open() {
+      this.$prompt("", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消"
+      })
+        .then(({ value }) => {
+          this.$message({
+            type: "success",
+            message: "评论成功"
+          });
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "取消输入"
+          });
+        });
     }
   }
 };
 </script>
 
 <style scoped>
+dd {
+  margin:5px 26px 10px 0px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
 .content {
   margin-top: 63px;
 }
@@ -194,7 +250,7 @@ h3 {
   line-height: 26px;
   margin-top: 20px;
 }
-.movie-director{
+.movie-director {
   width: 128px;
 }
 .dir-title {
@@ -203,7 +259,7 @@ h3 {
   margin-bottom: 5px;
   width: 128px;
 }
-.dir-pic{
+.dir-pic {
   width: 128px;
   height: 170px;
 }
@@ -221,8 +277,11 @@ h3 {
   float: right;
   margin-right: 350px;
 }
-.act-main{
+.act-main {
   float: right;
   margin-right: 40px;
+}
+.btn-comment{
+  float:right;
 }
 </style>
