@@ -14,6 +14,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -29,6 +32,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -44,6 +50,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -59,6 +68,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -74,6 +86,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -89,6 +104,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -104,6 +122,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -119,6 +140,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -134,6 +158,9 @@
                         <router-link to="item">
                           头号玩家
                         </router-link>
+                        <div class="item-act">
+                          主演：泰尔·谢里丹,奥利维亚·库克,本·门德尔森
+                        </div>
                         <div class="item-time">
                           上映时间：2018-03-02
                         </div>
@@ -157,7 +184,7 @@ export default {
   data() {
     return {
       activeName: "first",
-      tabPosition: "top"
+      tabPosition: "left"
     };
   },
   methods: {
@@ -172,7 +199,7 @@ export default {
 .iconfont {
   font-size: 40px;
   background: white;
-  color: #FF4741;
+  color: #FF4740;
   position: relative;
   display: block;
   width: 50px;
@@ -226,9 +253,10 @@ dd {
 a {
   text-decoration: none;
   color: black;
+  width: 200px;
 }
 a:hover {
-  color: red;
+  color: #FF4740;
 }
 .item-content{
   width: 610px;
@@ -239,10 +267,14 @@ a:hover {
 }
 .item-title{
   margin-top: 50px;
-  font-size: 35px;
+  font-size: 32px;
+}
+.item-act{
+  font-size: 18px;
+  margin-top: 40px;
 }
 .item-time{
-  margin-top: 50px;
+  margin-top: 20px;
   color: #999;
   font-size: 18px;
 }
@@ -250,6 +282,9 @@ a:hover {
   float: right;
   font-size: 50px;
   color: #ffb402;
-  margin-top: -90px;
+  margin-top: -120px;
+}
+.item-name{
+  width: 130px;
 }
 </style>
