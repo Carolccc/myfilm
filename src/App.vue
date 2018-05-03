@@ -12,12 +12,20 @@
                 <el-menu-item index="ranking">榜单</el-menu-item>
                 <el-menu-item index="5"  disabled>热点</el-menu-item>
             </el-menu>
-            <div class="icon iconfont icon-shenfenzheng"></div>
+             <el-dropdown>
+              <span class="el-dropdown-link icon iconfont icon-shenfenzheng">
+              </span>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>登陆</el-dropdown-item>
+                <el-dropdown-item>注册</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
             <div id="search">
-                <el-input placeholder="找影视剧、影人、影院" v-model="searchinput" class="input-with-select">
-                  <el-button slot="append" type="primary" icon="el-icon-search">搜索</el-button>
-                </el-input>
+              <el-input placeholder="找影视剧、影人、影院" v-model="searchinput" class="input-with-select">
+                <el-button slot="append" type="primary" icon="el-icon-search">搜索</el-button>
+              </el-input>
             </div>
+
         </div>
     </div>
     <router-view/>
@@ -101,7 +109,10 @@ export default {
 .el-menu-item{
   border-bottom: none;
 }
-
+.el-dropdown{
+  float: right;
+  margin-top: 1px;
+}
 .el-menu-item.is-active{
   border-bottom: none
 }
