@@ -81,6 +81,7 @@
               </div>
             </div>
           </div>
+
           <div class="model">
             <div class="mod-title">
               <div class="btn-comment">
@@ -89,9 +90,12 @@
               <h3>热门短评</h3>
             </div>
             <div class="mod-main">
-              {{modcontent}}
+              {{coment}}
             </div>
           </div>
+
+          <commen/>
+
         </el-tab-pane>
 
         <el-tab-pane label="演职人员" name="second">
@@ -134,15 +138,20 @@
 </template>
 
 <script>
+import comment from './comment.vue'
 export default {
   data() {
     return {
       value1: 4.5,
       activeName: "first",
-      modcontent:
-        "2045年，遭遇能源危机的世界处于崩溃边缘，人类选择在名为“绿洲”的VR游戏中寻找慰藉。但游戏创始人詹姆斯·哈利迪（马克·里朗斯 饰）的遗嘱打破了世外桃源的宁静：只要玩家寻获他设置的彩蛋，就能接手“绿洲”成为新的世界首富。吸引全世界参与的大冒险就此展开，男主角韦德·沃兹（泰尔·谢里丹 饰）也投身其中，但等待他的夺宝之旅不仅神秘凶险，还裹挟着巨大阴谋……"
+      modcontent:"ss",
+      coment:"",
     };
   },
+  components: {
+    comment
+  },
+
   methods: {
     handleClick(tab, event) {
       console.log(tab, event);
@@ -164,7 +173,11 @@ export default {
             message: "取消输入"
           });
         });
-    }
+    },
+
+    // showMsgfromChild(data){
+    //   this.coment = data
+    // }
   }
 };
 </script>
